@@ -1,6 +1,6 @@
 {
   "name": "wx-min-app-h5",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "通过小程序的webview快速构建应用",
   "main": "wx-min-app-h5.js",
   "scripts": {
