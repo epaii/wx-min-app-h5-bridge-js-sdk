@@ -1,21 +1,19 @@
-#  wxMinApp 介绍文档
+#  wxMinAppH5 介绍文档
 此项目是基于通用版微信webview小程序，通过小程序webview组件快速构建小程序App
 
 ## 引入
 
-1.下载 [**wx-minapp-h5.js**][epiijslink],并在网页中引用
+1.下载 [**wx-min-app-h5.js**][epiijslink],并在网页中引用
 
 ```html
-<script src="path/to/wx-minapp-h5.js"></script>
+<script src="path/to/wx-min-app-h5.js"></script>
 ```
 > 如果在nodejs环境中使用，可以通过npm包管理安装
 
 ```
 npm install wx-minapp-h5
 ```
-
-<script></script>
-```
+ 
 
 ## 支持的方法
 
@@ -50,4 +48,4 @@ npm install wx-minapp-h5
 ```
 
 
-[epiijslink]:https://raw.githubusercontent.com/epaii/wx-min-app-h5-bridge-js-sdk/master/wx-minapp-h5.js
+[epiijslink]:https://raw.githubusercontent.com/epaii/wx-min-app-h5-bridge-js-sdk/master/wx-min-app-h5.js
