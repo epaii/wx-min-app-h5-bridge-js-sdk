@@ -13,7 +13,7 @@
         root[library] = factory(root.wx);
     }
 }(this, function (wx) {
-    var runtime_tmp = {};
+
     var that = window;
 
     var u = navigator.userAgent;
@@ -22,16 +22,19 @@
     var funcRef = function () {
 
 
-        var eval_string = window.location.href.substr(window.location.href.indexOf("#") + 1);
-        if (eval_string.indexOf("_epii_s_") > 0) {
-            eval_string = eval_string.split("_epii_s_");
+        var eval_string = decodeURIComponent(window.location.href.substr(window.location.href.indexOf("#") + 1));
+
+        if (eval_string.indexOf("_epii_s_=") >= 0) {
+            eval_string = eval_string.split("_epii_s_=");
 
             if (eval_string.length != 2) {
                 return;
             }
         }
 
+
         eval_string = eval_string[1].split("_epii_")[0];
+
 
         if (eval_string.indexOf("if(") === 0) {
             var myreg = /\((.*?)\)/gi;
@@ -39,10 +42,11 @@
             var fun_name = decodeURIComponent(res[0].substr(1, res[0].length - 2));
 
             var fun_args = decodeURIComponent(res[1].substr(1, res[1].length - 2));
+
             if (window[fun_name + ""])
                 window[fun_name + ""](fun_args ? JSON.parse(fun_args) : "");
             else {
-                alert("没有接收函数")
+                //alert("没有接收函数")
             }
             window.history.go(-1)
         }
@@ -139,6 +143,6 @@
         if (("onhashchange" in window) && ((typeof document.documentMode === "undefined") || document.documentMode == 8)) {
             window.addEventListener("hashchange", funcRef, false);
         }
-    window._xcx_runtime_tmp = runtime_tmp;
+
     return native;
 }, "wxMinAppH5"))
