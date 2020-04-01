@@ -11,7 +11,7 @@
 > 如果在nodejs环境中使用，可以通过npm包管理安装
 
 ```
-npm install wx-minapp-h5
+npm install wx-min-app-h5
 ```
  
 
