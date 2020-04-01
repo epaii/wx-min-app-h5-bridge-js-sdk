@@ -56,7 +56,7 @@
         if (path.indexOf("/") != -1) {
             path = path.substring(0, path.lastIndexOf("/"));
         }
-        alert(path + "/" + url)
+
         return path + "/" + url;
     }
 
