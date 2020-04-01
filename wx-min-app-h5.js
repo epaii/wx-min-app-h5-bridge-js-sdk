@@ -56,6 +56,7 @@
         if (path.indexOf("/") != -1) {
             path = path.substring(0, path.lastIndexOf("/"));
         }
+        alert(path + "/" + url)
         return path + "/" + url;
     }
 
@@ -136,4 +137,4 @@
         }
     window._xcx_runtime_tmp = runtime_tmp;
     return native;
-}, "wxMinApp"))
+}, "wxMinAppH5"))

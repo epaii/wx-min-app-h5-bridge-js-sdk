@@ -7,6 +7,9 @@
 
 ```html
 <script src="path/to/wx-min-app-h5.js"></script>
+<script>
+    wxMinAppH5.openWindow("page2.html")
+</script>
 ```
 > 如果在nodejs环境中使用，可以通过npm包管理安装
 
