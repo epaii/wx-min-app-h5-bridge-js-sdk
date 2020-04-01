@@ -1,0 +1,22 @@
+{
+  "name": "wx-minapp-h5",
+  "version": "0.0.1",
+  "description": "通过小程序的webview快速构建应用",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epaii/wx-min-app-h5-bridge-js-sdk.git"
+  },
+  "dependencies": {
+    "weixin-js-sdk": "^1.4.0-test"
+  },
+  "keywords": [
+    "weixin bridge",
+    "minapp bridge"
+  ],
+  "author": "MrRen-epii",
+  "license": "ISC"
+}
