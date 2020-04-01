@@ -48,4 +48,4 @@ npm install wx-min-app-h5
 ```
 
 
-[epiijslink]:https://raw.githubusercontent.com/epaii/wx-min-app-h5-bridge-js-sdk/master/wx-min-app-h5.js
+[epiijslink]:https://gitee.com/epii/wx-min-app-h5-bridge-js-sdk/raw/master/wx-min-app-h5.js
