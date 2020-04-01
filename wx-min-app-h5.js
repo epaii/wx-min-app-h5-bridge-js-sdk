@@ -22,11 +22,15 @@
     var funcRef = function () {
 
 
-        var eval_string = window.location.href.substr(window.location.href.indexOf("#") + 1).split("_epii_s_");
+        var eval_string = window.location.href.substr(window.location.href.indexOf("#") + 1);
+        if (eval_string.indexOf("_epii_s_") > 0) {
+            eval_string = eval_string.split("_epii_s_");
 
-        if (eval_string.length != 2) {
-            return;
+            if (eval_string.length != 2) {
+                return;
+            }
         }
+
         eval_string = eval_string[1].split("_epii_")[0];
 
         if (eval_string.indexOf("if(") === 0) {
