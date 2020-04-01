@@ -143,6 +143,5 @@
         if (("onhashchange" in window) && ((typeof document.documentMode === "undefined") || document.documentMode == 8)) {
             window.addEventListener("hashchange", funcRef, false);
         }
-
     return native;
 }, "wxMinAppH5"))
